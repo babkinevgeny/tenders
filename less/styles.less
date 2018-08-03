@@ -1,0 +1,69 @@
+// out: ../css/styles.css, sourcemap: false, compress: false
+.tender{
+  font-family: "Roboto Slab", serif;
+  margin: 0 auto;
+  max-width: 1000px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  border: 2px solid #d3d7db;
+  border-radius: 5px;
+  font-size: 13px;
+  color: #b4b4b4;
+  padding: 20px 15px;
+  &__column{
+    padding: 10px;
+    &--left{
+      width: 35%;
+      b{
+        color: #41484e;
+      }
+    }
+    &--center{
+      color: #41484e;
+    }
+    &--right{
+      width: 35%;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+  &__btn{
+    text-decoration: none;
+  }
+  &__price {
+    color: #41484e;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  &__number{
+    font-weight: bold;
+    font-size: 16px;
+  }
+  &__title{
+    font-size: 20px;
+  }
+  &__orderer{
+    color: #b4b4b4;
+  }
+  &__btn{
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background: #06abdd;
+    border-radius: 5px;
+    text-align: center;
+    &:hover{
+      background: lighten(#06abdd, 5%);
+    }
+    &:active{
+      background: darken(#06abdd, 5%);
+    }
+  }
+}
